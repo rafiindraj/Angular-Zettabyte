@@ -1,46 +1,350 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+.DS_STORE
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
 /bazel-out
+/integration/bazel/bazel-*
+e2e_test.*
+node_modules
+tools/gulp-tasks/cldr/cldr-data/
+package-lock.json
 
-# dependencies
-/node_modules
-
-# profiling files
-chrome-profiler-events*.json
-speed-measure-plugin*.json
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
 .settings/
-*.sublime-workspace
+.vscode/launch.json
+.vscode/settings.json
+*.swo
+modules/.settings
+modules/.vscode
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Don't check in secret files
+*secret.js
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+# Ignore npm/yarn debug log
 npm-debug.log
 yarn-error.log
-testem.log
-/typings
 
-# System Files
-.DS_Store
-Thumbs.db
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+dist.zip
+dist/server.js
+dist/browser/1.cdf991dd477d4b72c8aa.js
+dist/browser/10.6879dc355a233ba05b0f.js
+dist/browser/11.5fc8f5cda7b78daab4fe.js
+dist/browser/12.d220b5a61009f00b2a69.js
+dist/browser/13.0d83e8dd6ce968844e5b.js
+dist/browser/14.dbb6efe172fb8aabf96c.js
+dist/browser/15.6b37f4ec0419b7a353ff.js
+dist/browser/16.697f086de0ce7120f61a.js
+dist/browser/17.0c1734c42a1c53905228.js
+dist/browser/18.54bb754013bf82109d69.js
+dist/browser/19.dae9ee35d9103be88d0d.js
+dist/browser/2.5b2cd2f388e6b3ec03b0.js
+dist/browser/20.f421157dfcd711d15436.js
+dist/browser/21.02dfea66f473b2afb913.js
+dist/browser/22.a6361c607eab55bed40c.js
+dist/browser/3.0b20a3aad43e696a32c9.js
+dist/browser/3rdpartylicenses.txt
+dist/browser/4.e53f22f91bd1928438d8.js
+dist/browser/5.a13f5e5e24c02a4d021f.js
+dist/browser/6.a8688be8b4a0c5c92b1a.js
+dist/browser/7.80aca3427f9a8c793a87.js
+dist/browser/8.6368c2ad9eb97409767d.js
+dist/browser/9.dde8c46a84d156297df6.js
+dist/browser/bariol-bold.fce74d79a149be212bde.otf
+dist/browser/bariol-regular.ffe84263f982cbe9bae0.otf
+dist/browser/common.d83179ca73d28aed65d4.js
+dist/browser/favicon.ico
+dist/browser/index.html
+dist/browser/main.070f35838082a0c6d904.js
+dist/browser/nucleo-icons.48ac036da7c792326626.ttf
+dist/browser/nucleo-icons.5c78b4cf03771fd22873.woff2
+dist/browser/nucleo-icons.6836b93bf1af0b571928.woff
+dist/browser/nucleo-icons.f32ed5ad3d76067b8e43.eot
+dist/browser/polyfills.41fd72f06aba212ad1c8.js
+dist/browser/runtime.120e5b0465102df2af44.js
+dist/browser/scripts.ac94b28ef713e195bf2e.js
+dist/browser/slick.ced611daf7709cc778da.eot
+dist/browser/slick.f97e3bbf73254b011209.svg
+dist/browser/styles.6ddb2c4de1246f617d44.css
+dist/browser/assets/css/demo.css
+dist/browser/assets/css/nucleo-icons.css
+dist/browser/assets/fonts/bariol-bold.otf
+dist/browser/assets/fonts/bariol-regular.eot
+dist/browser/assets/fonts/bariol-regular.otf
+dist/browser/assets/fonts/bariol-regular.ttf
+dist/browser/assets/fonts/bariol-regular.woff
+dist/browser/assets/fonts/bariol-regular.woff2
+dist/browser/assets/fonts/Fonts Anteraja.zip
+dist/browser/assets/fonts/nucleo-icons.eot
+dist/browser/assets/fonts/nucleo-icons.ttf
+dist/browser/assets/fonts/nucleo-icons.woff
+dist/browser/assets/fonts/nucleo-icons.woff2
+dist/browser/assets/i18n/en.json
+dist/browser/assets/i18n/in.json
+dist/browser/assets/img/(1-2).jpg
+dist/browser/assets/img/350x184-01.jpg
+dist/browser/assets/img/aajun-01.png
+dist/browser/assets/img/android - Logo.jpeg
+dist/browser/assets/img/angular2-logo-white.png
+dist/browser/assets/img/angular2-logo.png
+dist/browser/assets/img/Anteraja Mascot_en.jpg
+dist/browser/assets/img/Anteraja Mascot_en.webp
+dist/browser/assets/img/Anteraja Mascot_idn.jpg
+dist/browser/assets/img/Anteraja Mascot_idn.webp
+dist/browser/assets/img/anterajakemall kokas.jpeg
+dist/browser/assets/img/apple-icon.png
+dist/browser/assets/img/AppStore.png
+dist/browser/assets/img/area.jpeg
+dist/browser/assets/img/Artboard 1 copy 10.svg
+dist/browser/assets/img/Artboard 1 copy 11.png
+dist/browser/assets/img/Artboard 1 copy 11.svg
+dist/browser/assets/img/Artboard 1 copy 12.png
+dist/browser/assets/img/Artboard 1 copy 13.png
+dist/browser/assets/img/Artboard 1 copy 2.svg
+dist/browser/assets/img/Artboard 1 copy 21.png
+dist/browser/assets/img/Artboard 1 copy 22.png
+dist/browser/assets/img/Artboard 1 copy 23.png
+dist/browser/assets/img/Artboard 1 copy 27.png
+dist/browser/assets/img/Artboard 1 copy 28.svg
+dist/browser/assets/img/Artboard 1 copy 29.png
+dist/browser/assets/img/Artboard 1 copy 3.svg
+dist/browser/assets/img/Artboard 1 copy 31.png
+dist/browser/assets/img/Artboard 1 copy 33.png
+dist/browser/assets/img/Artboard 1 copy 4.svg
+dist/browser/assets/img/Artboard 1 copy 44.png
+dist/browser/assets/img/Artboard 1 copy 45.png
+dist/browser/assets/img/Artboard 1 copy 46.svg
+dist/browser/assets/img/Artboard 1 copy 47.png
+dist/browser/assets/img/Artboard 1 copy 5.svg
+dist/browser/assets/img/Artboard 1 copy 52.svg
+dist/browser/assets/img/Artboard 1 copy 53.png
+dist/browser/assets/img/Artboard 1 copy 59.png
+dist/browser/assets/img/Artboard 1 copy 6.svg
+dist/browser/assets/img/Artboard 1 copy 60.png
+dist/browser/assets/img/Artboard 1 copy 61.png
+dist/browser/assets/img/Artboard 1 copy 62.png
+dist/browser/assets/img/Artboard 1 copy 64.png
+dist/browser/assets/img/Artboard 1 copy 65.png
+dist/browser/assets/img/Artboard 1 copy 7.png
+dist/browser/assets/img/Artboard 1 copy 7.svg
+dist/browser/assets/img/Artboard 1 copy 73.png
+dist/browser/assets/img/Artboard 1 copy 76.png
+dist/browser/assets/img/Artboard 1 copy 77.png
+dist/browser/assets/img/Artboard 1 copy 79.png
+dist/browser/assets/img/Artboard 1 copy 8.svg
+dist/browser/assets/img/Artboard 1 copy 9.svg
+dist/browser/assets/img/Artboard 1 copy.svg
+dist/browser/assets/img/Artboard 1.svg
+dist/browser/assets/img/Aset PPT-01.png
+dist/browser/assets/img/Aset PPT-02.png
+dist/browser/assets/img/Aset PPT-03.png
+dist/browser/assets/img/Aset PPT-04.png
+dist/browser/assets/img/Aset PPT-05.png
+dist/browser/assets/img/Aset PPT-06.png
+dist/browser/assets/img/awan.png
+dist/browser/assets/img/banner-01 (1).png
+dist/browser/assets/img/banner-01-(websize).png
+dist/browser/assets/img/banner-01.png
+dist/browser/assets/img/banner-02 (2).png
+dist/browser/assets/img/banner-02 (3).png
+dist/browser/assets/img/banner-02 (3).png.sb-b692bdef-HMRIAP
+dist/browser/assets/img/banner-02-(websize).png
+dist/browser/assets/img/banner-1.png
+dist/browser/assets/img/banner-2.png
+dist/browser/assets/img/bannerrr-02.jpg
+dist/browser/assets/img/bannerrr-02.webp
+dist/browser/assets/img/bannerrr-03.jpg
+dist/browser/assets/img/bannerrr-12.png
+dist/browser/assets/img/bannerrr-13.jpg
+dist/browser/assets/img/bannerrr-13.png
+dist/browser/assets/img/bannerrr-13.webp
+dist/browser/assets/img/bannerrr-14.png
+dist/browser/assets/img/bannerrr-17.png
+dist/browser/assets/img/birthday.jpg
+dist/browser/assets/img/box_png_173183.jpg
+dist/browser/assets/img/cekrek-cekrek.jpeg
+dist/browser/assets/img/clouds.png
+dist/browser/assets/img/facebook-i.png
+dist/browser/assets/img/facebook-trans.png
+dist/browser/assets/img/facebook.png
+dist/browser/assets/img/favicon.ico
+dist/browser/assets/img/favicon.png
+dist/browser/assets/img/finddreamjob5.jpg
+dist/browser/assets/img/fog-low.png
+dist/browser/assets/img/footer.svg
+dist/browser/assets/img/googleplayicon.png
+dist/browser/assets/img/Homepage 01.jpg
+dist/browser/assets/img/icon whatsapp anteraja-67 copy.svg
+dist/browser/assets/img/icon whatsapp anteraja-67.svg
+dist/browser/assets/img/icon whatsapp anteraja-68.svg
+dist/browser/assets/img/icon-76.png
+dist/browser/assets/img/icon-77.png
+dist/browser/assets/img/icon-78.png
+dist/browser/assets/img/icon-79.png
+dist/browser/assets/img/icon-80.png
+dist/browser/assets/img/icon-81.png
+dist/browser/assets/img/icon-82.png
+dist/browser/assets/img/icon-83.png
+dist/browser/assets/img/icon-84.png
+dist/browser/assets/img/Image Cashback.jpg
+dist/browser/assets/img/Image Free Ongkir.jpg
+dist/browser/assets/img/instagram-i.png
+dist/browser/assets/img/instagram.jpg
+dist/browser/assets/img/instagram.png
+dist/browser/assets/img/iOS - Logo.jpg
+dist/browser/assets/img/jadwal pickup.JPG
+dist/browser/assets/img/kanan.png
+dist/browser/assets/img/kiri.png
+dist/browser/assets/img/kode kupon.jpeg
+dist/browser/assets/img/konten-1.jpg
+dist/browser/assets/img/konten-1.webp
+dist/browser/assets/img/konten-2.jpg
+dist/browser/assets/img/konten-2.webp
+dist/browser/assets/img/konten-3.jpg
+dist/browser/assets/img/konten-3.webp
+dist/browser/assets/img/konten-4.jpg
+dist/browser/assets/img/konten-4.webp
+dist/browser/assets/img/konten-5.jpg
+dist/browser/assets/img/konten-5.webp
+dist/browser/assets/img/lacak pengiriman.png
+dist/browser/assets/img/LACAK-PARSEL.png
+dist/browser/assets/img/live bogor.jpeg
+dist/browser/assets/img/Logo Anteraja-New-01.png
+dist/browser/assets/img/Logo Anteraja-New-WHITE-01.png
+dist/browser/assets/img/Logo Anteraja_White.png
+dist/browser/assets/img/logo.png
+dist/browser/assets/img/member get member.jpg
+dist/browser/assets/img/navbar-hotline.png
+dist/browser/assets/img/nd.jpg
+dist/browser/assets/img/nd.webp
+dist/browser/assets/img/nicolas.jpg
+dist/browser/assets/img/Our-Visions-(magenta) (1).jpg
+dist/browser/assets/img/parcel.jpg
+dist/browser/assets/img/parcel.png
+dist/browser/assets/img/parcel.webp
+dist/browser/assets/img/Pasti-Bawa-Hepi-3 (2).jpg
+dist/browser/assets/img/placeholder.jpg
+dist/browser/assets/img/promo-1.png
+dist/browser/assets/img/promo-2.png
+dist/browser/assets/img/promo-3.png
+dist/browser/assets/img/promo-4.png
+dist/browser/assets/img/promo-5.png
+dist/browser/assets/img/Promotional page2.png
+dist/browser/assets/img/Promotional page3.png
+dist/browser/assets/img/Promotional page4.png
+dist/browser/assets/img/Promotional-page.png
+dist/browser/assets/img/putih flash.svg
+dist/browser/assets/img/putih.svg
+dist/browser/assets/img/Recruitmen CRO.jpeg
+dist/browser/assets/img/refresh@3x.png
+dist/browser/assets/img/regular.jpg
+dist/browser/assets/img/regular.webp
+dist/browser/assets/img/satria-jovi.png
+dist/browser/assets/img/search-logo.png
+dist/browser/assets/img/services-nextday-en.png
+dist/browser/assets/img/services-nextday-in.png
+dist/browser/assets/img/services-regular-en.png
+dist/browser/assets/img/services-regular-in.png
+dist/browser/assets/img/Template PPT-01.jpg
+dist/browser/assets/img/tokped_promo.jpg
+dist/browser/assets/img/TRACK-PARCEL.png
+dist/browser/assets/img/track.png
+dist/browser/assets/img/tracking-logo.png
+dist/browser/assets/img/trackpakett.png
+dist/browser/assets/img/twitter-i.png
+dist/browser/assets/img/twitter-test.png
+dist/browser/assets/img/twitter-trans.png
+dist/browser/assets/img/twitter.png
+dist/browser/assets/img/Under-Construction-(1).jpg
+dist/browser/assets/img/Web Banner Artikel Free Ongkir 8-10 Oktober 2019-01.jpg
+dist/browser/assets/img/Web Banner Free Ongkir 8-10 Okt 2019-01.jpg
+dist/browser/assets/img/Web Banner ICEE 2019-01.jpg
+dist/browser/assets/img/Web-Banner-Artikel-Free-Ongkir-8-10-Oktober-2019.jpg
+dist/browser/assets/img/Web-Banner-Artikel-Promo-AA-di-Tokopedia.jpg
+dist/browser/assets/img/Web-Banner-Bebas-Ongkir-November-01.jpg
+dist/browser/assets/img/Web-Banner-Bebas-Ongkir-November-01.webp
+dist/browser/assets/img/website-06.png
+dist/browser/assets/img/website-07.png
+dist/browser/assets/img/website-08.png
+dist/browser/assets/img/website-11.png
+dist/browser/assets/img/website-25.png
+dist/browser/assets/img/pilot/android-1.jpeg
+dist/browser/assets/img/pilot/android-2.jpeg
+dist/browser/assets/img/pilot/android-3.jpeg
+dist/browser/assets/img/pilot/android-4.jpeg
+dist/browser/assets/img/pilot/android-5.jpeg
+dist/browser/assets/img/pilot/android-6.jpeg
+dist/browser/assets/img/pilot/android-7.jpeg
+dist/browser/assets/img/pilot/android-8.jpeg
+dist/browser/assets/img/pilot/ios - 1.jpeg
+dist/browser/assets/img/pilot/ios - 2.jpeg
+dist/browser/assets/img/pilot/ios - 3.jpeg
+dist/browser/assets/img/pilot/ios - 4.jpeg
+dist/browser/assets/img/pilot/ios - 5.jpeg
+dist/browser/assets/img/pilot/ios - 6.jpeg
+dist/browser/assets/img/pilot/ios - 7.jpeg
+dist/browser/assets/img/pilot/ios - 8.jpeg
+dist/browser/assets/img/pilot/ios - 9.jpeg
+dist/browser/assets/img/pilot/ios1.jpeg
+dist/browser/assets/img/pilot/ios2.jpeg
+dist/browser/assets/img/pilot/ios3.jpeg
+dist/browser/assets/img/pilot/ios4.jpeg
+dist/browser/assets/img/pilot/ios5.jpeg
+dist/browser/assets/img/pilot/ios6.jpeg
+dist/browser/assets/img/pilot/ios7.jpeg
+dist/browser/assets/img/pilot/ios8.jpeg
+dist/browser/assets/mock/promo.json
+dist/browser/assets/mock/tracking.json
+dist/browser/assets/sass/paper-kit.scss
+dist/browser/assets/sass/paper-kit/_alerts.scss
+dist/browser/assets/sass/paper-kit/_bootstrap-switch.scss
+dist/browser/assets/sass/paper-kit/_buttons.scss
+dist/browser/assets/sass/paper-kit/_cards.scss
+dist/browser/assets/sass/paper-kit/_carousel.scss
+dist/browser/assets/sass/paper-kit/_checkbox-radio.scss
+dist/browser/assets/sass/paper-kit/_collapse.scss
+dist/browser/assets/sass/paper-kit/_dropdown.scss
+dist/browser/assets/sass/paper-kit/_examples.scss
+dist/browser/assets/sass/paper-kit/_footers.scss
+dist/browser/assets/sass/paper-kit/_icons.scss
+dist/browser/assets/sass/paper-kit/_images.scss
+dist/browser/assets/sass/paper-kit/_inputs.scss
+dist/browser/assets/sass/paper-kit/_labels.scss
+dist/browser/assets/sass/paper-kit/_misc.scss
+dist/browser/assets/sass/paper-kit/_mixins.scss
+dist/browser/assets/sass/paper-kit/_modal.scss
+dist/browser/assets/sass/paper-kit/_navbars.scss
+dist/browser/assets/sass/paper-kit/_progress-bars.scss
+dist/browser/assets/sass/paper-kit/_responsive.scss
+dist/browser/assets/sass/paper-kit/_sections.scss
+dist/browser/assets/sass/paper-kit/_sliders.scss
+dist/browser/assets/sass/paper-kit/_social-buttons.scss
+dist/browser/assets/sass/paper-kit/_tabs-navs-pagination.scss
+dist/browser/assets/sass/paper-kit/_tooltips-and-popovers.scss
+dist/browser/assets/sass/paper-kit/_typography.scss
+dist/browser/assets/sass/paper-kit/_variables.scss
+dist/browser/assets/sass/paper-kit/mixins/_buttons.scss
+dist/browser/assets/sass/paper-kit/mixins/_inputs.scss
+dist/browser/assets/sass/paper-kit/mixins/_labels.scss
+dist/browser/assets/sass/paper-kit/mixins/_navbars.scss
+dist/browser/assets/sass/paper-kit/mixins/_popovers.scss
+dist/browser/assets/sass/paper-kit/mixins/_tabs.scss
+dist/browser/assets/sass/paper-kit/mixins/_transparency.scss
+dist/browser/assets/sass/paper-kit/mixins/_vendor-prefixes.scss
+dist/browser/assets/sass/paper-kit/plugins/_datetimepicker.scss
+dist/browser/WEB-INF/jboss-web.xml
+dist/browser/WEB-INF/web.xml
+dist/server/main.js
+dist/server/main.js.map
+dist/
